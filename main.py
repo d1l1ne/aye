@@ -12,7 +12,7 @@ class Integration(Resource):
     def post(self, prompt):
         ready_to_send = prompt
         return openai.Completion.create(
-            api_key="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",
+            api_key="", #Ввести API ключ
             model="davinci",
             prompt=ready_to_send,
             temperature=0.7
