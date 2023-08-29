@@ -16,7 +16,7 @@ class Integration(Resource):
             model="davinci",
             prompt=ready_to_send,
             temperature=0.7
-        )["choices"][0]["text"], 201
+        ), 201
 
 api.add_resource(Integration, "/generate", "/generate/", "/generate/<string:prompt>")
 if __name__ == '__main__':
